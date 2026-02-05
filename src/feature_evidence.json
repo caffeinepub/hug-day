@@ -1,0 +1,43 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-hug-day-greeting-page-styling-so-the-message-card-area-uses-the-same-background-color-gradient-as-the-page-background-remove-the-visible-white-card-background-contrast-while-keeping-all-existing-text-content-and-the-photo-in-its-current-position-and-size",
+      "featureTitle": "Update the Hug Day greeting page styling so the message card area uses the same background color/gradient as the page background (remove the visible white card background contrast), while keeping all existing text content and the photo in its current position and size.",
+      "files": [
+        "frontend/src/components/HugDayGreeting.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-render-the-floating-emoji-hearts-rain-as-a-visual-overlay-above-the-greeting-page-content-over-the-text-and-over-the-photo-without-blocking-user-interactions",
+      "featureTitle": "Render the floating emoji/hearts rain as a visual overlay above the greeting page content (over the text and over the photo) without blocking user interactions.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

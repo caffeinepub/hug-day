@@ -1,0 +1,55 @@
+{
+  "kind": "build_request",
+  "title": "Match message card background to page background and render emoji rain above content",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "text": "Update the Hug Day greeting page styling so the message card area uses the same background color/gradient as the page background (remove the visible white card background contrast), while keeping all existing text content and the photo in its current position and size.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ],
+        "quotes": [
+          "But I want the color of that page where it's written to be the color of the background and the white color and the background color to be same. And I want the photo in the place wherever it is right now."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The message card container no longer renders with a white background that contrasts against the page background.",
+        "The page background and the message/card background visually match (same background color/gradient).",
+        "The photo remains in the same location within the layout as before (no reordering or relocation), and the text content is unchanged."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Render the floating emoji/hearts rain as a visual overlay above the greeting page content (over the text and over the photo) without blocking user interactions.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ],
+        "quotes": [
+          "And I want the emoji rain to be over the text, over the photo."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Floating emojis/hearts appear on top of the heading, message text, signature, and photo (not behind them).",
+        "The emoji overlay remains non-interactive (clicks/taps still work normally on the page; the emoji layer does not capture pointer events).",
+        "The existing emoji burst/spawn behavior remains unchanged (initial burst, continuous spawning cadence, and click burst)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not change the greeting message text or the image URL.",
+    "Do not move the photo from its current position in the layout."
+  ],
+  "nonGoals": [
+    "Adding new pages, navigation, or additional features beyond the single greeting screen.",
+    "Backend changes (Motoko actor/API) or persistence."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

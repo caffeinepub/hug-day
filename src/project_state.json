@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Single-page \"Hug Day\" HTML/CSS/JS romantic greeting page featuring a hero hug emoji, message card with photo, and continuous floating emoji/hearts animation with burst on load and click.",
+  "architectural_notes": [
+    "Static HTML/CSS/JS page with fixed-position floating emoji elements animated upward; burst on page load and on body click; elements removed on animation end.",
+    "Ensure floating emoji/hearts layer renders above page content via z-index/stacking context (e.g., fixed overlay container with pointer-events disabled) while content layout (photo position) remains unchanged."
+  ],
+  "known_issues": [],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-implement-a-single-page-hug-day-greeting-screen-in-the-react-frontend-that-matches-the-provided-html-layout-a-large-centered-hero-emoji-at-the-top-followed-by-a-centered-rounded-card-containing-the-heading-text-the-provided-image-the-full-message-text-including-line-breaks-and-the-signature-block",
+      "title": "Implement a single-page “Hug Day” greeting screen in the React frontend that matches the provided HTML layout: a large centered hero “🤗” emoji at the top, followed by a centered rounded card containing the heading text, the provided image, the full message text (including line breaks), and the signature block.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-recreate-the-provided-styling-using-tailwind-css-and-minimal-custom-css-if-needed-background-gradient-ffd1c2-to-white-centered-typography-with-a-poppins-like-sans-serif-feel-pulsing-hero-emoji-animation-and-card-styling-white-background-large-rounded-corners-soft-drop-shadow",
+      "title": "Recreate the provided styling using Tailwind CSS (and minimal custom CSS if needed): background gradient (#ffd1c2 to white), centered typography with a Poppins-like sans-serif feel, pulsing hero emoji animation, and card styling (white background, large rounded corners, soft drop shadow).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-continuous-floating-emoji-animation-on-initial-page-load-create-a-large-burst-of-floating-emojis-100-continuously-spawn-additional-floating-emojis-at-the-specified-cadence-2-every-110ms-and-on-any-page-click-trigger-an-additional-burst-60-floating-emojis-must-rise-upward-from-below-the-viewport-rotate-fade-and-remove-themselves-from-the-dom-after-animation-completes",
+      "title": "Implement the continuous floating emoji animation: on initial page load create a large burst of floating emojis (100), continuously spawn additional floating emojis at the specified cadence (2 every ~110ms), and on any page click trigger an additional burst (60). Floating emojis must rise upward from below the viewport, rotate, fade, and remove themselves from the DOM after animation completes.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-coherent-romantic-visual-theme-consistent-with-the-hug-day-greeting-concept-warm-pastel-palette-soft-shadows-rounded-shapes-gentle-motion-and-enforce-it-consistently-across-spacing-typography-and-interactive-feel-without-introducing-additional-product-features-beyond-the-single-greeting-page",
+      "title": "Apply a coherent, romantic visual theme consistent with the Hug Day greeting concept (warm pastel palette, soft shadows, rounded shapes, gentle motion) and enforce it consistently across spacing, typography, and interactive feel, without introducing additional product features beyond the single greeting page.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-hug-day-greeting-page-styling-so-the-message-card-area-uses-the-same-background-color-gradient-as-the-page-background-remove-the-visible-white-card-background-contrast-while-keeping-all-existing-text-content-and-the-photo-in-its-current-position-and-size",
+      "title": "Update the Hug Day greeting page styling so the message card area uses the same background color/gradient as the page background (remove the visible white card background contrast), while keeping all existing text content and the photo in its current position and size.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-the-floating-emoji-hearts-rain-as-a-visual-overlay-above-the-greeting-page-content-over-the-text-and-over-the-photo-without-blocking-user-interactions",
+      "title": "Render the floating emoji/hearts rain as a visual overlay above the greeting page content (over the text and over the photo) without blocking user interactions.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create the \"Hug Day\" single-page webpage with styled card layout, hero emoji, embedded photo, message text, and floating emoji/hearts rise animation (burst on load and click).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Adjust styling so the message/card background matches the page background (remove white contrast) while keeping the photo in its current position; ensure the floating emoji/hearts rain renders above the text and photo (overlay via layering/z-index).",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Hug Day",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

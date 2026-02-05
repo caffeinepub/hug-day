@@ -1,0 +1,8 @@
+{
+  "frontend/src/App.tsx": "Main application component that renders the Hug Day greeting page with floating emoji rain overlay positioned above all content.",
+  "frontend/src/components/HugDayGreeting.tsx": "Single-page greeting component displaying the hero emoji, centered card with transparent background blending into page gradient, image, romantic message text with preserved line breaks, and signature block.",
+  "frontend/src/components/FloatingEmojiRain.tsx": "Component managing continuous floating emoji animations with initial burst (100), continuous spawning (2 every 110ms), click-triggered bursts (60), and automatic DOM cleanup after animation ends.",
+  "frontend/src/index.css": "Global styles with Poppins font import, warm gradient background (#ffd1c2 to white), pulse animation for hero emoji, floating emoji rise animation with z-index 9999 for overlay effect, and custom color variables for the romantic theme.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with Poppins as the default sans-serif font family for consistent typography throughout the app.",
+  "frontend/index.html": "HTML entry point with \"Hug Day\" title and root div for React mounting."
+}

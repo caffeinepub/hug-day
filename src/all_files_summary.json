@@ -1,0 +1,16 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no methods defined.",
+  "feature_evidence.json": "Feature evidence file listing implemented UI changes and related source files for two greeting-page features.",
+  "frontend-file-summaries.txt": "Reference file providing short predefined summaries for main frontend components and configuration files.",
+  "frontend/index.css": "Global Tailwind-based theme variables and dark mode styles applied to the frontend layout.",
+  "frontend/index.html": "Basic HTML entry point containing the root div and script loader for the React app.",
+  "frontend/src/App.tsx": "Root React component that renders the Hug Day greeting and the floating emoji overlay.",
+  "frontend/src/components/FloatingEmojiRain.tsx": "Generates continuous and burst-based floating emoji animations and cleans them after animation ends.",
+  "frontend/src/components/HugDayGreeting.tsx": "Displays the Hug Day greeting layout including hero emoji, photo, long message, and signature.",
+  "frontend/src/hooks/useActor.ts": "Hook that creates and manages a backend actor instance tied to Internet Identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides authentication context and logic for managing Internet Identity login, state, and persistence.",
+  "frontend/src/index.css": "Global styles including Poppins font, page gradient, emoji animations, and Hug Day color utilities.",
+  "frontend/src/main.tsx": "React entry file initializing query client, identity provider, and rendering the App component.",
+  "frontend/tailwind.config.js": "Configures Tailwind with dark‑mode support, content paths, extended theme colors using OKLCH variables, custom fonts, animations, and includes typography, container query, and animate plugins.",
+  "project_state.json": "Defines the project’s state, features, and architectural notes for a Hug Day greeting page with animations and styling requirements."
+}

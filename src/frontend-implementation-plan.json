@@ -1,0 +1,49 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Hug Day greeting card background blending and emoji overlay layering",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "summary": "Make the greeting message card visually share the same background as the page (remove white card contrast) without changing text or moving/resizing the photo.",
+      "acceptanceCriteria": [
+        "The message card container no longer renders with a white background that contrasts against the page background.",
+        "The page background and the message/card background visually match (same background color/gradient).",
+        "The photo remains in the same location within the layout as before (no reordering or relocation), and the text content is unchanged."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HugDayGreeting.tsx",
+          "operation": "modify",
+          "description": "Remove the explicit white background styling from the message card container (e.g., replace the current bg-white treatment with a transparent/inherited background) while keeping the existing markup structure so text content and the image URL/placement remain unchanged."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Adjust any card-specific styling (e.g., card container background-related styles if present/added) to ensure the card area visually matches the page background gradient/color, without altering global body background or changing the image positioning."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Ensure the floating emoji/hearts rain renders as a non-interactive overlay above all greeting page content while keeping existing spawn/burst behavior unchanged.",
+      "acceptanceCriteria": [
+        "Floating emojis/hearts appear on top of the heading, message text, signature, and photo (not behind them).",
+        "The emoji overlay remains non-interactive (clicks/taps still work normally on the page; the emoji layer does not capture pointer events).",
+        "The existing emoji burst/spawn behavior remains unchanged (initial burst, continuous spawning cadence, and click burst)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Update the stacking order for the emoji overlay by raising the z-index of the floating emoji container (and, if needed, the individual floating emoji elements) so it layers above the greeting content, while keeping pointer-events disabled to avoid blocking interactions."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Verify/wire the intended layer ordering between the greeting content and FloatingEmojiRain (ensure the overlay is not placed behind content due to z-index/stacking contexts) without changing the emoji behavior or adding new routes/pages."
+        }
+      ]
+    }
+  ]
+}
